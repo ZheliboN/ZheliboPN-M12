@@ -1,6 +1,7 @@
 import unittest
 from runner_and_tournament import Runner, Tournament
 
+
 class RunnerTest(unittest.TestCase):
     iz_frozen = False
 
@@ -30,11 +31,12 @@ class RunnerTest(unittest.TestCase):
 
 class TournamentTest(unittest.TestCase):
     iz_frozen = True
+
     @classmethod
     def setUpClass(cls):
         cls.all_results = list()
 
-    @unittest.skipIf(iz_frozen,'Тесты в этом кейсе заморожены')
+    @unittest.skipIf(iz_frozen, 'Тесты в этом кейсе заморожены')
     def setUp(self):
         self.s_men1 = Runner('Усэйн', 10)
         self.s_men2 = Runner('Андрей', 10)

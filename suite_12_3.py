@@ -8,4 +8,3 @@ testRT.addTest(unittest.TestLoader().loadTestsFromTestCase(tests_12_3.Tournament
 
 runner = unittest.TextTestRunner(verbosity=2)
 runner.run(testRT)
-
